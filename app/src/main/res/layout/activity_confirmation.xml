@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@android:color/white"
+    tools:context=".ConfirmationActivity">
+
+    <!-- Judul Halaman -->
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="359dp"
+        android:layout_height="72dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="30dp"
+        android:background="@android:color/holo_green_dark"
+        android:elevation="4dp"
+        android:gravity="center"
+        android:letterSpacing="0.05"
+        android:padding="8dp"
+        android:text="Order Confirmation"
+        android:textColor="@android:color/white"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <!-- Tombol Back ke Menu -->
+    <LinearLayout
+        android:layout_width="357dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="24dp"
+        android:elevation="2dp"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Confirmation Nama Makanan -->
+        <TextView
+            android:id="@+id/tvFoodName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="0dp"
+            android:gravity="left"
+            android:padding="0dp"
+            android:text="Food Name : "
+            android:textColor="@android:color/black"
+            android:textSize="22sp" />
+
+        <!-- Confirmation Jumlah Porsi -->
+        <TextView
+            android:id="@+id/tvServings"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="0dp"
+            android:gravity="left"
+            android:padding="0dp"
+            android:text="Number of Servings : "
+            android:textColor="@android:color/black"
+            android:textSize="22dp" />
+
+        <!-- Confirmation Nama pengorder -->
+        <TextView
+            android:id="@+id/tvOrderingName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="0dp"
+            android:gravity="left"
+            android:padding="0dp"
+            android:text="Ordering Name : "
+            android:textColor="@android:color/black"
+            android:textSize="22dp" />
+
+        <!-- Confirmation Catatan Tambahan -->
+        <TextView
+            android:id="@+id/tvNotes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:padding="0dp"
+            android:text="Notes : "
+            android:textColor="@android:color/black"
+            android:textSize="22dp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/backtoMenu"
+        android:layout_width="356dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="8dp"
+        android:backgroundTint="@android:color/holo_green_dark"
+        android:elevation="4dp"
+        android:padding="16dp"
+        android:textSize="22dp"
+        android:text="Back to Menu"
+        android:textColor="@android:color/white" />
+</LinearLayout>
